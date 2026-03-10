@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Link to our external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Load custom Google Font (Inter) for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    <!-- 1. Navigation bar -->
+    <nav class="navbar">
+        <div class="logo">MyPortfolio</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- Hamburger icon for mobile menu -->
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+ <!-- 2. Hero Section -->
+<header id="hero" class="hero-section">
+    <div class="hero-container">
+
+        <!-- LEFT SIDE TEXT -->
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Ravindi Ranthilini</span></h1>
+            <p>A passionate Web Developer creating beautiful and functional digital experiences.</p>
+            <a href="#projects" class="btn primary-btn">View My Work</a>
+        </div>
+
+        <!-- RIGHT SIDE IMAGE -->
+        <div class="hero-image">
+            <img src="images/profile.jpeg" alt="Ravindi Ranthilini">
+        </div>
+
+    </div>
+
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p class="about-text">
+                Hi, I'm Ravindi Ranthilini  👩‍💻
+
+I am a passionate and motivated IT enthusiast who enjoys building creative and practical software solutions. I love turning ideas into real-world applications through clean, efficient, and user-friendly designs.<br></br>
+
+My interests include:<br></br>
+
+
+🌐 Frontend Web Development (HTML, CSS, JavaScript, React)<br></br>
+
+
+⚙️ Building interactive and responsive web applications<br></br>
+
+
+🗄️ Database design and system development<br></br>
+
+
+📊 Learning software engineering concepts and best practices<br></br>
+
+
+I am continuously improving my technical skills and exploring new technologies to grow as a developer. I enjoy working on projects that solve real problems and enhance user experience.
+            </p>
+        </div>
+    </section>
+
+    <!-- 3. Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <!-- Skill cards with progress bars -->
+                <div class="skill-card">
+                    <h3>HTML5</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>CSS3</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>JavaScript</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Responsive Design</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 95%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+               <!-- Project 1 -->
+<div class="project-card">
+    <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=400&q=80"
+        alt="To Do App Thumbnail" class="project-img">
+
+    <div class="project-info">
+        <h3>To-Do List Application</h3>
+
+        <p>
+            A simple and interactive To-Do List web application that allows users
+            to add, manage, and track their daily tasks efficiently. Built using
+            HTML, CSS, and JavaScript.
+        </p>
+
+        <a href="https://github.com/Ravindi-29/To_Do_App" 
+           target="_blank" 
+           class="btn secondary-btn">
+           View Code
+        </a>
+    </div>
+</div>
+                </div>
+                <!-- Project 2 -->
+<div class="project-card">
+    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=400&q=80"
+        alt="Expense Tracker Thumbnail" class="project-img">
+
+    <div class="project-info">
+        <h3>Expense Tracker Application</h3>
+
+        <p>
+            A web-based Expense Tracker that helps users manage their income and expenses,
+            track financial transactions, and monitor their spending habits. Built using
+            HTML, CSS, and JavaScript.
+        </p>
+
+        <a href="https://github.com/Ravindi-29/Expense_Tracker"
+           target="_blank"
+           class="btn secondary-btn">
+           View Code
+        </a>
+    
+
+     </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=400&q=80"
+                        alt="Project 3 Thumbnail" class="project-img">
+                    <div class="project-info">
+                        <h3>Task Tracker</h3>
+                        <p>A clean to-do list app utilizing local storage for data persistence.</p>
+                        <a href="#" class="btn secondary-btn">View Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <!-- Contact Form -->
+            <form id="contact-form" class="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name">
+                    <small class="error-msg">Name is required</small>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                    <small class="error-msg">Valid email is required</small>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" placeholder="Enter your message"></textarea>
+                    <small class="error-msg">Message is required</small>
+                </div>
+                <button type="submit" class="btn primary-btn btn-block">Send Message</button>
+                <div id="success-msg" class="success-msg">Thank you! Your message has been sent.</div>
+            </form>
+        </div>
+    </section>
+
+    <!-- 6. Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ravindi Ranthilini. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/Ravindi-29">GitHub</a>
+                <a href="#">LinkedIn</a>
+                
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link to our external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+

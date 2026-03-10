@@ -1,0 +1,424 @@
+/* --- CSS Reset & Custom Variables --- */
+:root {
+    --primary-color: #4f46e5;      /* Vibrant Indigo */
+    --primary-dark: #4338ca;
+    --text-color: #1f2937;         /* Dark Gray */
+    --text-light: #6b7280;         /* Lighter Gray */
+    --bg-color: #f9fafb;           /* Off-white background */
+    --bg-white: #ffffff;
+    --border-color: #e5e7eb;
+    --error-color: #ef4444;        /* Red for validation errors */
+    --success-color: #10b981;      /* Green for success */
+    --transition: all 0.3s ease;   /* Reusable transition for smooth animations */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero-container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:80px 10%;
+}
+
+.hero-content{
+    max-width:600px;
+}
+
+.hero-image img{
+    width:380px;
+    border-radius:15px;
+}
+
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling on hash links */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Global Section Styles --- */
+section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: var(--text-color);
+    position: relative;
+}
+
+/* Stylish underline beneath section titles */
+.section-title::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    background-color: var(--primary-color);
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+/* --- 1. Navigation Bar --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: var(--bg-white);
+    position: fixed; /* Keep nav pinned at the top */
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.nav-links li a:hover {
+    color: var(--primary-color);
+}
+
+/* Mobile Hamburger Menu icon (hidden on desktop) */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-color);
+    transition: var(--transition);
+}
+
+/* --- 2. Hero Section --- */
+.hero-section {
+    height: 100vh; /* Takes up full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(238,242,255,1) 0%, rgba(224,231,255,1) 100%);
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: var(--primary-color);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --- Reusable Button Styles --- */
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: var(--transition);
+    border: none;
+}
+
+.primary-btn {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px); /* Lift up slightly */
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+}
+
+.secondary-btn {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.secondary-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+/* --- About Section --- */
+.about-section {
+    background-color: var(--bg-white);
+}
+
+.about-text {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: var(--text-light);
+}
+
+/* --- 3. Skills Section --- */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.skill-card {
+    background-color: var(--bg-white);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: var(--transition);
+}
+
+.skill-card:hover {
+    transform: translateY(-5px); /* Interaction animation */
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+
+.skill-card h3 {
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: var(--border-color);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    /* Expanding animation on load */
+    animation: fillProgress 1.5s ease-in-out forwards;
+}
+
+@keyframes fillProgress {
+    from { width: 0; }
+}
+
+/* --- 4. Projects Section --- */
+.projects-section {
+    background-color: var(--bg-white);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.project-card:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transform: scale(1.02); /* Pop out effect */
+}
+
+.project-img {
+    width: 100%;
+    height: 220px;   /* same height for all images */
+    object-fit: cover;  /* crop image nicely */
+    border-radius: 8px 8px 0 0;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h3 {
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    color: var(--text-light);
+    margin-bottom: 20px;
+}
+
+/* --- 5. Contact Section --- */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--bg-white);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+/* Form validation styles */
+.error-msg {
+    color: var(--error-color);
+    font-size: 0.85rem;
+    display: none; /* Hidden by default */
+    margin-top: 5px;
+}
+
+.form-group.error input,
+.form-group.error textarea {
+    border-color: var(--error-color);
+}
+
+.form-group.error .error-msg {
+    display: block; /* Turns visible if error class is applied via JS */
+}
+
+.success-msg {
+    color: var(--success-color);
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 600;
+    display: none; /* Shown via JS on success */
+}
+
+/* --- 6. Footer --- */
+footer {
+    background-color: var(--text-color);
+    color: var(--bg-white);
+    text-align: center;
+    padding: 40px 0;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: var(--bg-white);
+    text-decoration: none;
+    margin: 0 10px;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide top links by default on small screens */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: var(--bg-white);
+        padding: 20px 0;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    /* Toggled by mobile Menu Script */
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: flex; /* Reveal the icon on mobile screens */
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+
