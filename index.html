@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ravindi Ranthilini | Full-Stack Software Engineer & UI/UX Designer</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Portfolio of Ravindi Ranthilini - Information Technology Undergraduate at University of Moratuwa (ITUM), Intern Software Engineer, and Lead UI/UX Designer.">
+  <meta name="keywords" content="Ravindi Ranthilini, Software Engineer, UI/UX Designer, Frontend Developer, University of Moratuwa, ITUM, Asvanna, React, Python, Java, Figma">
+  <meta name="author" content="Ravindi Ranthilini">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-theme="dark">
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-wrapper">
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#home" class="logo">
+          <span class="logo-badge">&lt;RR /&gt;</span>
+          <span class="logo-name">Ravindi<span class="logo-accent">.dev</span></span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#references" class="nav-link">References</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Action Items (Role Indicator, Theme Toggle, CTA) -->
+        <div class="nav-actions">
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark and light theme" title="Toggle theme">
+            <i class="fas fa-moon"></i>
+          </button>
+          
+          <button class="btn btn-outline cv-btn-nav" id="open-cv-modal-btn">
+            <i class="fas fa-file-invoice"></i>
+            <span>Resume</span>
+          </button>
+
+          <a href="#contact" class="btn btn-primary nav-cta">Let's Connect</a>
+
+          <!-- Mobile Menu Hamburger -->
+          <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-bg-glow glow-1"></div>
+    <div class="hero-bg-glow glow-2"></div>
+    <div class="container hero-container">
+      <div class="hero-grid">
+        
+        <!-- Hero Text Content -->
+        <div class="hero-content">
+          <div class="badge-status reveal">
+            <span class="pulse-dot"></span>
+            <span>Seeking Intern Software Engineer & UI/UX Roles</span>
+          </div>
+
+          <h1 class="hero-title reveal">
+            Hi, I'm <br>
+            <span class="gradient-text">Ravindi Ranthilini</span>
+          </h1>
+
+          <div class="hero-subtitle reveal">
+            <span class="code-bracket">&lt;</span>
+            <span class="typing-text" id="typing-text"></span>
+            <span class="cursor-blink">|</span>
+            <span class="code-bracket">/&gt;</span>
+          </div>
+
+          <p class="hero-description reveal">
+            Information Technology undergraduate at the <strong>Institute of Technology, University of Moratuwa (ITUM)</strong>.
+            I combine scalable full-stack engineering (<span class="text-highlight">Python, Java, React, Node, SQL</span>) 
+            with human-centered product design (<span class="text-highlight">Figma, Design Systems, UX Research</span>) 
+            to architect intuitive, high-performance web applications.
+          </p>
+
+          <!-- Quick Info Chips -->
+          <div class="hero-chips reveal">
+            <span class="hero-chip"><i class="fas fa-map-marker-alt"></i> Tangalle, Sri Lanka</span>
+            <span class="hero-chip"><i class="fas fa-university"></i> ITUM, Univ. of Moratuwa</span>
+            <span class="hero-chip"><i class="fas fa-code-branch"></i> Open Source Contributor</span>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-btns reveal">
+            <a href="#projects" class="btn btn-primary btn-glow">
+              <i class="fas fa-laptop-code"></i> Explore Projects
+            </a>
+            <button class="btn btn-secondary open-cv-trigger">
+              <i class="fas fa-file-pdf"></i> View Resumes
+            </button>
+            <a href="#contact" class="btn btn-ghost">
+              <i class="fas fa-paper-plane"></i> Contact Me
+            </a>
+          </div>
+
+          <!-- Social Quick Links -->
+          <div class="hero-socials reveal">
+            <span class="socials-label">Connect:</span>
+            <a href="https://github.com/Ravindi-29" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub Profile">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/ravindi-ranthilini" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn Profile">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:rranthilini29@gmail.com" class="social-icon" aria-label="Send Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="tel:0706852993" class="social-icon" aria-label="Call Phone">
+              <i class="fas fa-phone"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Visual / Portrait Card -->
+        <div class="hero-visual reveal">
+          <div class="portrait-card-wrapper">
+            <div class="portrait-glow"></div>
+            <div class="portrait-card">
+              <div class="portrait-image-box">
+                <img src="assets/ravindi.jpg" alt="Ravindi Ranthilini - Software Engineer & UI/UX Designer" class="portrait-img">
+              </div>
+              <div class="portrait-footer">
+                <div class="portrait-badge">
+                  <span class="badge-title">Ravindi Ranthilini</span>
+                  <span class="badge-subtitle">IT Undergraduate @ ITUM</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Badge 1: Full-Stack -->
+            <div class="floating-badge badge-top-right">
+              <div class="badge-icon icon-dev"><i class="fas fa-code"></i></div>
+              <div class="badge-text">
+                <span class="title">Full-Stack Dev</span>
+                <span class="sub">React • Java • Python • Node</span>
+              </div>
+            </div>
+
+            <!-- Floating Badge 2: UI/UX -->
+            <div class="floating-badge badge-bottom-left">
+              <div class="badge-icon icon-design"><i class="fas fa-palette"></i></div>
+              <div class="badge-text">
+                <span class="title">Lead UI/UX</span>
+                <span class="sub">Figma • Design Systems • Research</span>
+              </div>
+            </div>
+
+            <!-- Floating Badge 3: Clean Code -->
+            <div class="floating-badge badge-top-left">
+              <div class="badge-icon icon-check"><i class="fas fa-check-circle"></i></div>
+              <div class="badge-text">
+                <span class="title">Agile & Clean Code</span>
+                <span class="sub">REST APIs • MVC • Testing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="about section-padding">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">Engineering Meets <span class="gradient-text">Human-Centered Design</span></h2>
+        <div class="underline"></div>
+        <p class="section-subtitle">A balanced developer crafting scalable backend logic and delightfully intuitive user interfaces.</p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Story column -->
+        <div class="about-story reveal">
+          <div class="about-card story-card">
+            <div class="story-header">
+              <i class="fas fa-quote-left quote-icon"></i>
+              <h3>Bridging the gap between robust architecture and fluid design</h3>
+            </div>
+            <p>
+              I am an <strong>Information Technology undergraduate at the Institute of Technology, University of Moratuwa (ITUM)</strong>,
+              passionate about solving real-world challenges through clean software architecture and thoughtful interface design.
+            </p>
+            <p>
+              My dual expertise allows me to think like an engineer while designing like an empathic product designer:
+              I build reliable RESTful APIs, structure performant relational databases in MySQL and PostgreSQL, and craft
+              production-grade prototypes and design systems in Figma that translate seamlessly into responsive web code.
+            </p>
+            <p>
+              Having engineered key platforms such as <strong>Asvanna</strong> (Agricultural Zero-Waste Platform), 
+              <strong>DMS Web</strong> (Distribution Management System), and <strong>Career Path Guidance System</strong>, 
+              I am prepared to integrate into an agile engineering team to contribute clean, tested, and impactful code.
+            </p>
+
+            <div class="story-highlights">
+              <div class="highlight-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Proven experience delivering end-to-end web applications</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Trained in Agile / Scrum, Object-Oriented Design & MVC patterns</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Committed to accessibility, responsiveness, and cross-browser harmony</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dual Pillars (Full-Stack vs UI/UX) -->
+        <div class="about-pillars reveal">
+          <!-- Pillar 1: Software Engineering -->
+          <div class="pillar-card">
+            <div class="pillar-icon dev-icon">
+              <i class="fas fa-terminal"></i>
+            </div>
+            <div class="pillar-content">
+              <h4>Software & Full-Stack Engineering</h4>
+              <p>Specializing in modular, scalable application backbones with Python, Java, JavaScript, PHP, Node.js, and Spring Boot.</p>
+              <ul class="pillar-tags">
+                <li><i class="fas fa-caret-right"></i> RESTful API Architectures</li>
+                <li><i class="fas fa-caret-right"></i> Relational Schemas (MySQL & PostgreSQL)</li>
+                <li><i class="fas fa-caret-right"></i> Object-Oriented & MVC Architecture</li>
+                <li><i class="fas fa-caret-right"></i> Git Version Control & Postman API Testing</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Pillar 2: UI/UX & Frontend -->
+          <div class="pillar-card">
+            <div class="pillar-icon design-icon">
+              <i class="fas fa-bezier-curve"></i>
+            </div>
+            <div class="pillar-content">
+              <h4>Lead UI/UX & Frontend Architecture</h4>
+              <p>Translating user requirements into cohesive design systems, intuitive wireframes, and pixel-perfect interactive web interfaces.</p>
+              <ul class="pillar-tags">
+                <li><i class="fas fa-caret-right"></i> High-Fidelity Prototyping & Figma Systems</li>
+                <li><i class="fas fa-caret-right"></i> User Research & Usability Validation</li>
+                <li><i class="fas fa-caret-right"></i> React.js & Modern Responsive Layouts</li>
+                <li><i class="fas fa-caret-right"></i> Mobile-First & Cross-Browser Compatibility</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Quick Stats Row -->
+          <div class="about-stats-row">
+            <div class="stat-box">
+              <span class="stat-number">4+</span>
+              <span class="stat-label">Core Featured Projects</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">4</span>
+              <span class="stat-label">Certified Credentials</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">NDT</span>
+              <span class="stat-label">Univ. of Moratuwa</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills & Competencies Section -->
+  <section id="skills" class="skills section-padding">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Competencies</span>
+        <h2 class="section-title">Technical <span class="gradient-text">Skills & Toolbox</span></h2>
+        <div class="underline"></div>
+        <p class="section-subtitle">Synthesized from hands-on software development and user experience design.</p>
+      </div>
+
+      <!-- Skills Category Tabs -->
+      <div class="skills-tabs reveal">
+        <button class="skill-tab-btn active" data-filter="all">All Skills</button>
+        <button class="skill-tab-btn" data-filter="core">Core Languages</button>
+        <button class="skill-tab-btn" data-filter="design">UI/UX & Design</button>
+        <button class="skill-tab-btn" data-filter="frontend">Frontend & Web</button>
+        <button class="skill-tab-btn" data-filter="backend">Backend & Databases</button>
+        <button class="skill-tab-btn" data-filter="methods">Methods & Tools</button>
+        <button class="skill-tab-btn" data-filter="soft">Soft Skills</button>
+      </div>
+
+      <!-- Skills Grid -->
+      <div class="skills-grid" id="skills-grid">
+
+        <!-- CORE LANGUAGES -->
+        <div class="skill-item reveal" data-category="core">
+          <div class="skill-icon-wrap" style="color: #3776ab;"><i class="fab fa-python"></i></div>
+          <div class="skill-info">
+            <h4>Python</h4>
+            <span class="skill-category">Core Language</span>
+          </div>
+        </div>
+
+        <div class="skill-item reveal" data-category="core">
+          <div class="skill-icon-wrap" style="color: #f89820;"><i class="fab fa-java"></i></div>
+          <div class="skill-info">
+            <h4>Java</h4>
+            <span class="skill-category">Core & OOP</span>
+          </div>
+        </div>
+
+        <div class="skill-item reveal" data-category="core frontend">
+          <div class="skill-icon-wrap" style="color: #f7df1e;"><i class="fab fa-js-square"></i></div>
+          <div class="skill-info">
+            <h4>JavaScript</h4>
+            <span class="skill-category">ES6+ & Modern JS</span>
+          </div>
+        </div>
+
+        <div class="skill-item reveal" data-category="core backend">
+          <div class="skill-icon-wrap" style="color: #777bb4;"><i class="fab fa-php"></i></div>
+          <div class="skill-info">
+            <h4>PHP</h4>
+            <span class="skill-category">Backend Scripting</span>
+          </div>
+        </div>
+
+        <div class="skill-item reveal" data-category="core backend">
+          <div class="skill-icon-wrap" style="color: #336791;"><i class="fas fa-database"></i></div>
+          <div class="skill-info">
+            <h4>SQL</h4>
+            <span class="skill-category">Queries & Schemas</span>
+          </div>
+        </div>
+
+        <div class="skill-item reveal" data-category="core frontend">
+          <div class="skill-icon-wrap" style="color: #e34f26;"><i class="fab fa-html5"></i></div>
+          <div class="skill-info">
+            <h4>HTML5</h4>
+            <span class="skill-category">Semantic Markup</span>
+          </div>
+        </div>
+
+        <div class="skill-item reveal" data-category="core frontend">
+          <div class="skill-icon-wrap" style="color: #1572b6;"><i class="fab fa-css3-alt"></i></div>
+          <div class="skill-info">
+            <h4>CSS3</h4>
+            <span class="skill-category">Modern Layouts & Grid</span>
+          </div>
+        </div>
+
+        <!-- UI/UX & DESIGN -->
+        <div class="skill-item reveal" data-category="design">
+          <div class="skill-icon-wrap" style="color: #f24e1e;"><i class="fab fa-figma"></i></div>
+          <div class="skill-info">
+            <h4>Figma</h4>
+            <span class="skill-category">UI/UX & Prototyping</span>
+          </div>
+        </div>
+
+        <div class="skill-item reveal" data-category="design">
+          <div class="skill-icon-wrap" style="color: #38bdf8;"><i class="fas fa-pencil-ruler"></i></div>
+          <div class="skill-info">
+            <h4>Wireframing</h4>
+            <span class="skill-category">Low & High Fidelity</span>
+          </div>
+        </div>
+
+        <div class="skill-item reveal" data-category="design">
+          <div class="skill-icon-wrap" style="color: #a855f7;"><i class="fas fa-users-viewfinder"></i></div>
+          <div class="skill-info">
+            <h4>User Research</h4>
+            <span class="skill-category">Personas & Journeys</span>
+          </div>
+        </div>
+
+        <div class="skill-item reveal" data-category="design">
+          <div class="skill-icon-wrap" style="color: #06b6d4;"><i class="fas fa-sitemap"></i></div>
+          <div class="skill-info">
+            <h4>Information Architecture</h4>
+            <span class="skill-category">Navigation Structures</span>
+          </div>
+        </div>
+
+        <div class="skill-item reveal" data-category="design">
+          <div class="skill-icon-wrap" style="color: #ec4899;"><i class="fas fa-layer-group"></i></div>
+          <div class="skill-info">
+            <h4>Design Systems</h4>
+            <span class="skill-category">Component Libraries</span>
+          </div>
+        </div>
+
+        <div class="skill-item reveal" data-category="design">
+          <div class="skill-icon-wrap" style="color: #10b981;"><i class="fas fa-vial-circle-check"></i></div>
+          <div class="skill-info">
+            <h4>Usability Testing</h4>
+            <span class="skill-category">UI/UX Validation</span>
+          </div>
+        </div>
+
+        <!-- FRONTEND & FRAMEWORKS -->
+        <div class="skill-item reveal" data-category="frontend">
+          <div class="skill-icon-wrap" style="color: #61dafb;"><i class="fab fa-react"></i></div>
+          <div class="skill-info">
+            <h4>React.js</h4>
+            <span class="skill-category">SPA & Component State</span>
+          </div>
+        </div>
+
+        <div class="skill-item reveal" data-category="frontend">
+          <div class="skill-icon-wrap" style="color: #38bdf8;"><i class="fas fa-wind"></i></div>
+          <div class="skill-info">
+            <h4>Tailwind CSS</h4>
+            <span class="skill-category">Utility-First CSS</span>
+          </div>
+        </div>
+
+        <div class="skill-item reveal" data-category="frontend">
+          <div class="skill-icon-wrap" style="color: #8b5cf6;"><i class="fas fa-mobile-screen-button"></i></div>
+          <div class="skill-info">
+            <h4>Responsive Design</h4>
+            <span class="skill-category">Mobile-First Principles</span>
+          </div>
+        </div>
+
+        <div class="skill-item reveal" data-category="frontend">
+          <div class="skill-icon-wrap" style="color: #f59e0b;"><i class="fas fa-globe"></i></div>
+          <div class="skill-info">
+            <h4>Cross-Browser</h4>
+            <span class="skill-category">Compatibility Testing</span>
+          </div>
+        </div>
+
+        <!-- BACKEND & DATABASES -->
+        <div class="skill-item reveal" data-category="backend">
+          <div class="skill-icon-wrap" style="color: #68a063;"><i class="fab fa-node-js"></i></div>
+          <div class="skill-info">
+            <h4>Node.js</h4>
+            <span class="skill-category">Runtime Environment</span>
+          </div>
+        </div>
+
+        <div class="skill-item reveal" data-category="backend">
+          <div class="skill-icon-wrap" style="color: #94a3b8;"><i class="fas fa-server"></i></div>
+          <div class="skill-info">
+            <h4>Express.js</h4>
+            <span class="skill-category">RESTful Services</span>
+          </div>
+        </div>
+
+        <div class="skill-item reveal" data-category="backend">
+          <div class="skill-icon-wrap" style="color: #6db33f;"><i class="fas fa-leaf"></i></div>
+          <div class="skill-info">
+            <h4>Spring Boot</h4>
+            <span class="skill-category">Enterprise Java Backend</span>
+          </div>
+        </div>
+
+        <div class="skill-item reveal" data-category="backend">
+          <div class="skill-icon-wrap" style="color: #336791;"><i class="fas fa-cubes"></i></div>
+          <div class="skill-info">
+            <h4>PostgreSQL</h4>
+            <span class="skill-category">Relational DBMS</span>
+          </div>
+        </div>
+
+        <div class="skill-item reveal" data-category="backend">
+          <div class="skill-icon-wrap" style="color: #00758f;"><i class="fas fa-database"></i></div>
+          <div class="skill-info">
+            <h4>MySQL</h4>
+            <span class="skill-category">Schema & Query Design</span>
+          </div>
+        </div>
+
+        <div class="skill-item reveal" data-category="backend">
+          <div class="skill-icon-wrap" style="color: #38bdf8;"><i class="fas fa-network-wired"></i></div>
+          <div class="skill-info">
+            <h4>RESTful APIs</h4>
+            <span class="skill-category">Endpoint Architecture</span>
+          </div>
+        </div>
+
+        <!-- METHODS & TOOLS -->
+        <div class="skill-item reveal" data-category="methods">
+          <div class="skill-icon-wrap" style="color: #f05032;"><i class="fab fa-git-alt"></i></div>
+          <div class="skill-info">
+            <h4>Git & GitHub</h4>
+            <span class="skill-category">Version Control & CI</span>
+          </div>
+        </div>
+
+        <div class="skill-item reveal" data-category="methods">
+          <div class="skill-icon-wrap" style="color: #ff6c37;"><i class="fas fa-paper-plane"></i></div>
+          <div class="skill-info">
+            <h4>Postman</h4>
+            <span class="skill-category">API Testing & Docs</span>
+          </div>
+        </div>
+
+        <div class="skill-item reveal" data-category="methods">
+          <div class="skill-icon-wrap" style="color: #0089d6;"><i class="fab fa-microsoft"></i></div>
+          <div class="skill-info">
+            <h4>Microsoft Azure</h4>
+            <span class="skill-category">Cloud Foundations</span>
+          </div>
+        </div>
+
+        <div class="skill-item reveal" data-category="methods">
+          <div class="skill-icon-wrap" style="color: #818cf8;"><i class="fas fa-project-diagram"></i></div>
+          <div class="skill-info">
+            <h4>OOP & MVC</h4>
+            <span class="skill-category">Architectural Patterns</span>
+          </div>
+        </div>
+
+        <div class="skill-item reveal" data-category="methods">
+          <div class="skill-icon-wrap" style="color: #22c55e;"><i class="fas fa-rotate"></i></div>
+          <div class="skill-info">
+            <h4>Agile / Scrum</h4>
+            <span class="skill-category">Iterative Delivery</span>
+          </div>
+        </div>
+
+        <!-- SOFT SKILLS -->
+        <div class="skill-item reveal" data-category="soft">
+          <div class="skill-icon-wrap" style="color: #38bdf8;"><i class="fas fa-comments"></i></div>
+          <div class="skill-info">
+            <h4>Effective Communication</h4>
+            <span class="skill-category">Cross-Functional Alignment</span>
+          </div>
+        </div>
+
+        <div class="skill-item reveal" data-category="soft">
+          <div class="skill-icon-wrap" style="color: #ec4899;"><i class="fas fa-people-group"></i></div>
+          <div class="skill-info">
+            <h4>Teamwork & Collaboration</h4>
+            <span class="skill-category">Agile Teamwork</span>
+          </div>
+        </div>
+
+        <div class="skill-item reveal" data-category="soft">
+          <div class="skill-icon-wrap" style="color: #f59e0b;"><i class="fas fa-brain"></i></div>
+          <div class="skill-info">
+            <h4>Problem Solving</h4>
+            <span class="skill-category">Analytical Thinking</span>
+          </div>
+        </div>
+
+        <div class="skill-item reveal" data-category="soft">
+          <div class="skill-icon-wrap" style="color: #10b981;"><i class="fas fa-chart-line"></i></div>
+          <div class="skill-info">
+            <h4>Visual Storytelling</h4>
+            <span class="skill-category">Design Presentation</span>
+          </div>
+        </div>
+
+        <div class="skill-item reveal" data-category="soft">
+          <div class="skill-icon-wrap" style="color: #a855f7;"><i class="fas fa-sliders"></i></div>
+          <div class="skill-info">
+            <h4>Adaptability & Decisions</h4>
+            <span class="skill-category">Continuous Learning</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Section -->
+  <section id="projects" class="projects section-padding">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Portfolio Showcase</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Engineering & Design</span> Projects</h2>
+        <div class="underline"></div>
+        <p class="section-subtitle">Real-world applications showcasing full-stack technical delivery and user experience excellence.</p>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+
+        <!-- Project 1: Asvanna -->
+        <article class="project-card reveal">
+          <div class="project-media">
+            <img src="assets/project1.jpg" alt="Asvanna - Agricultural Market Intelligence Platform" class="project-img">
+            <div class="project-overlay">
+              <span class="project-role-badge"><i class="fas fa-star"></i> Lead UI/UX Designer & Web Developer</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">React.js</span>
+              <span class="tag">Figma</span>
+              <span class="tag">UI/UX Design</span>
+              <span class="tag">RESTful APIs</span>
+              <span class="tag">AgTech</span>
+            </div>
+
+            <h3 class="project-title">Asvanna - Agricultural Market Intelligence & Zero-Waste Platform</h3>
+            
+            <p class="project-desc">
+              An innovative platform connecting local farmers and commercial buyers to eliminate price volatility and post-harvest agricultural waste.
+            </p>
+
+            <div class="project-dual-aspects">
+              <div class="aspect-item">
+                <span class="aspect-label"><i class="fas fa-palette"></i> UI/UX Focus:</span>
+                <span class="aspect-text">Spearheaded complete UI/UX lifecycle in Figma, crafting intuitive user journeys, wireframes, and interactive high-fidelity prototypes.</span>
+              </div>
+              <div class="aspect-item">
+                <span class="aspect-label"><i class="fas fa-code"></i> Engineering Focus:</span>
+                <span class="aspect-text">Architected core workflows and built responsive front-end interfaces connecting farmers and commercial buyers smoothly.</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <div class="project-repo">
+                <i class="fab fa-github"></i>
+                <span>NirMAN-15/asvanna</span>
+              </div>
+              <a href="https://github.com/NirMAN-15/asvanna" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                <span>View Source</span>
+                <i class="fas fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Distribution Management System (DMS Web) -->
+        <article class="project-card reveal">
+          <div class="project-media">
+            <img src="assets/project2.jpg" alt="Distribution Management System (DMS Web)" class="project-img">
+            <div class="project-overlay">
+              <span class="project-role-badge"><i class="fas fa-layer-group"></i> Full-Stack Developer | UI/UX & Frontend Designer</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">Full-Stack Web</span>
+              <span class="tag">Cloud Sync</span>
+              <span class="tag">Enterprise Dashboard</span>
+              <span class="tag">Supply Chain</span>
+            </div>
+
+            <h3 class="project-title">Distribution Management System (DMS Web)</h3>
+            
+            <p class="project-desc">
+              Enterprise distribution and supply chain platform supporting real-time tracking, order synchronization, and field representative workflows.
+            </p>
+
+            <div class="project-dual-aspects">
+              <div class="aspect-item">
+                <span class="aspect-label"><i class="fas fa-palette"></i> UI/UX Focus:</span>
+                <span class="aspect-text">Designed clean, accessible dashboard layouts and field-rep workflows, optimizing operational visibility and cross-device efficiency.</span>
+              </div>
+              <div class="aspect-item">
+                <span class="aspect-label"><i class="fas fa-code"></i> Engineering Focus:</span>
+                <span class="aspect-text">Engineered enterprise distribution pipelines and cloud-integrated synchronization for seamless order and inventory tracking.</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <div class="project-repo">
+                <i class="fab fa-github"></i>
+                <span>NirMAN-15/DMS-web</span>
+              </div>
+              <a href="https://github.com/NirMAN-15/DMS-web" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                <span>View Source</span>
+                <i class="fas fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: Career Path Guidance & Diagnostic System -->
+        <article class="project-card reveal">
+          <div class="project-media">
+            <img src="assets/project3.jpg" alt="Career Path Guidance & Diagnostic System" class="project-img">
+            <div class="project-overlay">
+              <span class="project-role-badge"><i class="fas fa-compass"></i> Lead Full-Stack Developer | UI/UX Architect</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">MySQL</span>
+              <span class="tag">Analytics Backend</span>
+              <span class="tag">Relational Schemas</span>
+              <span class="tag">Diagnostic Engine</span>
+            </div>
+
+            <h3 class="project-title">Career Path Guidance & Diagnostic System</h3>
+            
+            <p class="project-desc">
+              An intelligent diagnostic system providing tailored IT career trajectory recommendations for undergraduate students based on skill metrics.
+            </p>
+
+            <div class="project-dual-aspects">
+              <div class="aspect-item">
+                <span class="aspect-label"><i class="fas fa-palette"></i> UI/UX Focus:</span>
+                <span class="aspect-text">Developed user-friendly diagnostic interfaces and structured navigation paths to simplify complex career analytics for students.</span>
+              </div>
+              <div class="aspect-item">
+                <span class="aspect-label"><i class="fas fa-code"></i> Engineering Focus:</span>
+                <span class="aspect-text">Designed relational MySQL schemas and implemented backend analytics routes to compute career alignment metrics.</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <div class="project-repo">
+                <i class="fab fa-github"></i>
+                <span>NirMAN-15/career-suggestion-system</span>
+              </div>
+              <a href="https://github.com/NirMAN-15/career-suggestion-system" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                <span>View Source</span>
+                <i class="fas fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4: Task & Schedule Planner -->
+        <article class="project-card reveal">
+          <div class="project-media">
+            <img src="assets/project4.jpg" alt="Task & Schedule Planner (To-Do App)" class="project-img">
+            <div class="project-overlay">
+              <span class="project-role-badge"><i class="fas fa-list-check"></i> Full-Stack Developer | UI/UX & Frontend Developer</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">State Management</span>
+              <span class="tag">UI/UX Feedback</span>
+              <span class="tag">Productivity</span>
+            </div>
+
+            <h3 class="project-title">Task & Schedule Planner (To-Do App)</h3>
+            
+            <p class="project-desc">
+              A distraction-free task management and productivity scheduling application focused on effortless organization and fluid state handling.
+            </p>
+
+            <div class="project-dual-aspects">
+              <div class="aspect-item">
+                <span class="aspect-label"><i class="fas fa-palette"></i> UI/UX Focus:</span>
+                <span class="aspect-text">Designed a clean, intuitive task scheduling layout focused on productivity, minimal cognitive load, and visual state feedback.</span>
+              </div>
+              <div class="aspect-item">
+                <span class="aspect-label"><i class="fas fa-code"></i> Engineering Focus:</span>
+                <span class="aspect-text">Developed interactive user interfaces, efficient task tracking logic, persistent local state, and smooth DOM animations.</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <div class="project-repo">
+                <i class="fab fa-github"></i>
+                <span>Ravindi-29/To_Do_App</span>
+              </div>
+              <a href="https://github.com/Ravindi-29/To_Do_App" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                <span>View Source</span>
+                <i class="fas fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Academic Qualifications -->
+  <section id="education" class="education section-padding">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Academic Background</span>
+        <h2 class="section-title">Education & <span class="gradient-text">Academic Qualifications</span></h2>
+        <div class="underline"></div>
+        <p class="section-subtitle">Rigorous technological grounding and foundational academic excellence.</p>
+      </div>
+
+      <div class="timeline-container">
+        
+        <!-- Timeline Item 1: NDT -->
+        <div class="timeline-card reveal">
+          <div class="timeline-badge">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="timeline-date-chip">2025 - Present</div>
+          <div class="timeline-body">
+            <h3 class="degree-title">National Diploma in Technology (NDT) in Information Technology</h3>
+            <h4 class="institution-title"><i class="fas fa-university"></i> Institute of Technology, University of Moratuwa</h4>
+            <p class="timeline-desc">
+              Rigorous engineering education covering software engineering methodologies, object-oriented programming (Java, Python), 
+              relational database design (SQL), data structures & algorithms, web architecture, and agile software development.
+            </p>
+            <div class="timeline-pills">
+              <span class="pill">Software Engineering</span>
+              <span class="pill">Database Systems</span>
+              <span class="pill">Web Architectures</span>
+              <span class="pill">Agile Engineering</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Item 2: LPEC Diploma -->
+        <div class="timeline-card reveal">
+          <div class="timeline-badge">
+            <i class="fas fa-award"></i>
+          </div>
+          <div class="timeline-date-chip">Graduated</div>
+          <div class="timeline-body">
+            <div class="degree-header-flex">
+              <h3 class="degree-title">Diploma in Information Technology</h3>
+              <span class="grade-badge"><i class="fas fa-star"></i> Excellent Pass</span>
+            </div>
+            <h4 class="institution-title"><i class="fas fa-school"></i> LPEC Campus</h4>
+            <p class="timeline-desc">
+              Comprehensive study of programming fundamentals, systems design, computing concepts, web design basics, and practical software application development.
+            </p>
+            <div class="timeline-pills">
+              <span class="pill">Programming Fundamentals</span>
+              <span class="pill">Web Design</span>
+              <span class="pill">Information Systems</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Item 3: A/L -->
+        <div class="timeline-card reveal">
+          <div class="timeline-badge">
+            <i class="fas fa-atom"></i>
+          </div>
+          <div class="timeline-date-chip">2022 / 2023</div>
+          <div class="timeline-body">
+            <h3 class="degree-title">G.C.E. Advanced Level - Physical Science Stream</h3>
+            <h4 class="institution-title"><i class="fas fa-landmark"></i> H/Ruhunu Vijayaba National College</h4>
+            <p class="timeline-desc">
+              Strong mathematical and scientific training in Combined Mathematics, Physics, and Chemistry, providing analytical rigor and structured problem-solving skills.
+            </p>
+            <div class="timeline-pills">
+              <span class="pill">Combined Mathematics</span>
+              <span class="pill">Physics</span>
+              <span class="pill">Analytical Problem Solving</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Licenses & Professional Certifications -->
+  <section id="certifications" class="certifications section-padding">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Credentials</span>
+        <h2 class="section-title">Licenses & <span class="gradient-text">Professional Certifications</span></h2>
+        <div class="underline"></div>
+        <p class="section-subtitle">Verified continuous learning, specialization courses, and community leadership.</p>
+      </div>
+
+      <div class="certifications-grid">
+
+        <!-- Cert 1: Front-End Web Development -->
+        <div class="cert-card reveal">
+          <div class="cert-header">
+            <div class="cert-icon-box cert-frontend">
+              <i class="fas fa-code"></i>
+            </div>
+            <span class="cert-year">2026</span>
+          </div>
+          <h3 class="cert-title">Front-End Web Development</h3>
+          <h4 class="cert-issuer">University of Moratuwa Open Learning Platform</h4>
+          <p class="cert-desc">
+            In-depth mastery of HTML5, CSS3, modern responsive layouts, JavaScript interactivity, DOM manipulation, and cross-browser web design standards.
+          </p>
+          <div class="cert-footer">
+            <span class="verified-tag"><i class="fas fa-circle-check"></i> Verified Credential</span>
+          </div>
+        </div>
+
+        <!-- Cert 2: Python for Beginners -->
+        <div class="cert-card reveal">
+          <div class="cert-header">
+            <div class="cert-icon-box cert-python">
+              <i class="fab fa-python"></i>
+            </div>
+            <span class="cert-year">2026</span>
+          </div>
+          <h3 class="cert-title">Python for Beginners</h3>
+          <h4 class="cert-issuer">University of Moratuwa Open Learning Platform</h4>
+          <p class="cert-desc">
+            Comprehensive foundation in Python syntax, data structures, conditional control flow, algorithmic problem solving, functions, and modular programming.
+          </p>
+          <div class="cert-footer">
+            <span class="verified-tag"><i class="fas fa-circle-check"></i> Verified Credential</span>
+          </div>
+        </div>
+
+        <!-- Cert 3: Web Design for Beginners -->
+        <div class="cert-card reveal">
+          <div class="cert-header">
+            <div class="cert-icon-box cert-design">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <span class="cert-year">2026</span>
+          </div>
+          <h3 class="cert-title">Web Design for Beginners</h3>
+          <h4 class="cert-issuer">University of Moratuwa Open Learning Platform</h4>
+          <p class="cert-desc">
+            Visual aesthetics, color theory, typography, accessibility guidelines, UI layouts, responsive grids, and design ergonomics for digital media.
+          </p>
+          <div class="cert-footer">
+            <span class="verified-tag"><i class="fas fa-circle-check"></i> Verified Credential</span>
+          </div>
+        </div>
+
+        <!-- Cert 4: ZeroPlastic TRAIL 26 -->
+        <div class="cert-card reveal">
+          <div class="cert-header">
+            <div class="cert-icon-box cert-green">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <span class="cert-year">Participation</span>
+          </div>
+          <h3 class="cert-title">Participation Certificate - ZeroPlastic TRAIL 26</h3>
+          <h4 class="cert-issuer">Let’s Do It World & ZeroPlastic Movement</h4>
+          <p class="cert-desc">
+            Honored on World Cleanup Day for active community leadership, environmental responsibility, sustainability advocacy, and nationwide teamwork.
+          </p>
+          <div class="cert-footer">
+            <span class="verified-tag"><i class="fas fa-earth-americas"></i> Environmental Impact</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Professional References Section -->
+  <section id="references" class="references section-padding">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Endorsements</span>
+        <h2 class="section-title">Professional <span class="gradient-text">References</span></h2>
+        <div class="underline"></div>
+        <p class="section-subtitle">Academic faculty members who can attest to my technical competence, integrity, and diligence.</p>
+      </div>
+
+      <div class="references-grid">
+
+        <!-- Ref 1: Mrs. Uthpala Athukorala -->
+        <div class="ref-card reveal">
+          <div class="ref-quote-watermark"><i class="fas fa-quote-right"></i></div>
+          <div class="ref-avatar">
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <div class="ref-details">
+            <h3 class="ref-name">Mrs. Uthpala Athukorala</h3>
+            <span class="ref-title">Lecturer</span>
+            <span class="ref-org"><i class="fas fa-university"></i> Institute of Technology, University of Moratuwa</span>
+            
+            <div class="ref-contacts">
+              <a href="tel:0772666602" class="ref-contact-link">
+                <i class="fas fa-phone"></i>
+                <span>077 2666602</span>
+              </a>
+              <a href="mailto:uthpalap@itum.mrt.ac.lk" class="ref-contact-link">
+                <i class="fas fa-envelope"></i>
+                <span>uthpalap@itum.mrt.ac.lk</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ref 2: Mrs. Tharukshi Adasuriya -->
+        <div class="ref-card reveal">
+          <div class="ref-quote-watermark"><i class="fas fa-quote-right"></i></div>
+          <div class="ref-avatar">
+            <i class="fas fa-chalkboard-user"></i>
+          </div>
+          <div class="ref-details">
+            <h3 class="ref-name">Mrs. Tharukshi Adasuriya</h3>
+            <span class="ref-title">Lecturer</span>
+            <span class="ref-org"><i class="fas fa-university"></i> Institute of Technology, University of Moratuwa</span>
+            
+            <div class="ref-contacts">
+              <a href="tel:0704524440" class="ref-contact-link">
+                <i class="fas fa-phone"></i>
+                <span>070 4524440</span>
+              </a>
+              <a href="mailto:tharukshin@itum.mrt.ac.lk" class="ref-contact-link">
+                <i class="fas fa-envelope"></i>
+                <span>tharukshin@itum.mrt.ac.lk</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section-padding">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Let's Connect</span>
+        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+        <div class="underline"></div>
+        <p class="section-subtitle">Interested in hiring me as an Intern Software Engineer or UI/UX Designer? Let's discuss how I can contribute.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Details -->
+        <div class="contact-info-col reveal">
+          <div class="contact-card info-card">
+            <h3>Let's collaborate on impactful software</h3>
+            <p>
+              I am actively seeking internship opportunities where I can apply my full-stack engineering skills,
+              design intuition, and collaborative spirit. Feel free to contact me directly via phone, email, or LinkedIn.
+            </p>
+
+            <div class="contact-items-list">
+              <!-- Email -->
+              <div class="contact-item">
+                <div class="contact-icon email-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-text">
+                  <span class="label">Email Address</span>
+                  <a href="mailto:rranthilini29@gmail.com" class="val">rranthilini29@gmail.com</a>
+                </div>
+              </div>
+
+              <!-- Phone -->
+              <div class="contact-item">
+                <div class="contact-icon phone-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-text">
+                  <span class="label">Direct Phone / WhatsApp</span>
+                  <a href="tel:0706852993" class="val">070 6852993 (+94 70 685 2993)</a>
+                </div>
+              </div>
+
+              <!-- Location -->
+              <div class="contact-item">
+                <div class="contact-icon loc-icon">
+                  <i class="fas fa-location-dot"></i>
+                </div>
+                <div class="contact-text">
+                  <span class="label">Location</span>
+                  <span class="val">Tangalle, Sri Lanka (Open to Relocation & Remote)</span>
+                </div>
+              </div>
+
+              <!-- LinkedIn -->
+              <div class="contact-item">
+                <div class="contact-icon in-icon">
+                  <i class="fab fa-linkedin-in"></i>
+                </div>
+                <div class="contact-text">
+                  <span class="label">LinkedIn Profile</span>
+                  <a href="https://linkedin.com/in/ravindi-ranthilini" target="_blank" rel="noopener noreferrer" class="val">linkedin.com/in/ravindi-ranthilini</a>
+                </div>
+              </div>
+
+              <!-- GitHub -->
+              <div class="contact-item">
+                <div class="contact-icon git-icon">
+                  <i class="fab fa-github"></i>
+                </div>
+                <div class="contact-text">
+                  <span class="label">GitHub Repositories</span>
+                  <a href="https://github.com/Ravindi-29" target="_blank" rel="noopener noreferrer" class="val">github.com/Ravindi-29</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-col reveal">
+          <div class="contact-card form-card">
+            <h3>Send a Direct Message</h3>
+            <form id="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Your Name <span class="required">*</span></label>
+                  <input type="text" id="name" name="name" class="form-control" placeholder="Jane Doe" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address <span class="required">*</span></label>
+                  <input type="email" id="email" name="email" class="form-control" placeholder="jane@example.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="role-interest">Role Interest</label>
+                <select id="role-interest" name="role-interest" class="form-control select-control">
+                  <option value="Intern Software Engineer">Intern Software Engineer</option>
+                  <option value="Lead UI/UX Designer / Frontend">Lead UI/UX Designer / Frontend</option>
+                  <option value="Full-Stack Web Developer">Full-Stack Web Developer</option>
+                  <option value="Project Collaboration">Project Collaboration / Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject <span class="required">*</span></label>
+                <input type="text" id="subject" name="subject" class="form-control" placeholder="Internship Opportunity at ..." required>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your Message <span class="required">*</span></label>
+                <textarea id="message" name="message" rows="5" class="form-control" placeholder="Hi Ravindi, I reviewed your portfolio and would love to speak about..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                <i class="fas fa-paper-plane"></i>
+                <span>Send Message</span>
+              </button>
+            </form>
+            <div id="form-toast" class="form-toast" style="display: none;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Preview Modal -->
+  <div class="cv-modal-overlay" id="cv-modal" aria-hidden="true">
+    <div class="cv-modal-box">
+      <div class="cv-modal-header">
+        <div class="cv-modal-title">
+          <i class="fas fa-file-invoice"></i>
+          <h3>Curriculum Vitae Options</h3>
+        </div>
+        <button class="cv-modal-close" id="close-cv-modal" aria-label="Close modal">&times;</button>
+      </div>
+
+      <div class="cv-modal-body">
+        <p class="modal-intro">
+          Ravindi brings dual-discipline competence. Select the resume orientation tailored to your recruitment criteria:
+        </p>
+
+        <div class="cv-options-grid">
+          <!-- Option 1: Software Engineer -->
+          <div class="cv-option-card">
+            <div class="cv-option-badge badge-swe">Software Engineering</div>
+            <h4>Intern Software Engineer CV</h4>
+            <p>Emphasizes Python, Java, JavaScript, Spring Boot, React, Node.js, RESTful APIs, OOP, relational databases, and architecture.</p>
+            <div class="cv-tags">
+              <span>Full-Stack</span>
+              <span>Backend & APIs</span>
+              <span>Databases</span>
+              <span>Agile</span>
+            </div>
+            <a href="mailto:rranthilini29@gmail.com?subject=Request%20for%20Software%20Engineer%20Resume%20-%20Ravindi%20Ranthilini" class="btn btn-primary btn-sm">
+              <i class="fas fa-paper-plane"></i> Request SE Resume
+            </a>
+          </div>
+
+          <!-- Option 2: UI/UX Designer -->
+          <div class="cv-option-card">
+            <div class="cv-option-badge badge-ux">UI/UX & Frontend</div>
+            <h4>Lead UI/UX Designer & Frontend CV</h4>
+            <p>Emphasizes Figma, Wireframing, User Research, Information Architecture, Prototyping, Design Systems, and Responsive React.</p>
+            <div class="cv-tags">
+              <span>Figma</span>
+              <span>Design Systems</span>
+              <span>User Research</span>
+              <span>Frontend</span>
+            </div>
+            <a href="mailto:rranthilini29@gmail.com?subject=Request%20for%20UI/UX%20Designer%20Resume%20-%20Ravindi%20Ranthilini" class="btn btn-secondary btn-sm">
+              <i class="fas fa-paper-plane"></i> Request UI/UX Resume
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <span class="logo-badge">&lt;RR /&gt;</span>
+            <span class="logo-name">Ravindi<span class="logo-accent">.dev</span></span>
+          </a>
+          <p class="footer-tagline">
+            Information Technology Undergraduate @ Institute of Technology, University of Moratuwa.
+            Building scalable digital solutions with clean code & thoughtful UI/UX design.
+          </p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Quick Navigation</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills & Tools</a></li>
+            <li><a href="#projects">Featured Projects</a></li>
+            <li><a href="#education">Education & NDT</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#references">References</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Get in Touch</h4>
+          <p><i class="fas fa-location-dot"></i> Tangalle, Sri Lanka</p>
+          <p><i class="fas fa-phone"></i> 070 6852993</p>
+          <p><i class="fas fa-envelope"></i> rranthilini29@gmail.com</p>
+          <div class="footer-socials">
+            <a href="https://github.com/Ravindi-29" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/ravindi-ranthilini" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:rranthilini29@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ravindi Ranthilini. All rights reserved. Crafted with precision & passion.</p>
+        <a href="#home" class="back-to-top" aria-label="Back to top">
+          <i class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
