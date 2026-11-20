@@ -21,7 +21,7 @@ This repository hosts the official personal e-portfolio for **Ravindi Ranthilini
 - **Featured Projects**:
   1. **[Asvanna](https://github.com/NirMAN-15/asvanna)** — Agricultural Market Intelligence & Zero-Waste Platform (*Lead UI/UX Designer & Web Developer*)
   2. **[To-Do Planner](https://github.com/Ravindi-29/To_Do_App)** — Task & Schedule Planner (*Full-Stack Developer | UI/UX & Frontend Developer*)
-  3. **[Career Path Guidance](https://github.com/NirMAN-15/career-suggestion-system)** — Diagnostic IT Career Guidance System (*Lead Full-Stack Developer | UI/UX Architect*)
+  3. **[ReqWise](https://github.com/Ravindi-29/ReqWise)** — Automated SRS Analysis & Requirements Intelligence Platform (*Full-Stack Developer | System Architect*)
   4. **[DMS Web](https://github.com/NirMAN-15/DMS-web)** — Distribution Management System (*Full-Stack Developer | UI/UX & Frontend Designer*)
 - **Technical Skills Matrix**: Filterable skills grid covering Core Languages, Design & Prototyping, Frontend, Backend & Databases, Methods & Methodologies, and Soft Skills.
 - **Academic Qualifications**: National Diploma in Technology (NDT) in IT at University of Moratuwa, Diploma in IT (LPEC Campus - Excellent Pass), and G.C.E. Advanced Level Physical Science.
